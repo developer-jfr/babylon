@@ -1,0 +1,70 @@
+@import 'styles/variables/mixins.scss';
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 14px;
+    position: relative;
+  }
+
+
+  
+  .form_body {
+    padding-inline: 20%;
+    padding-top: 0;
+    padding-bottom: 10%;
+    @include for-max-width-tabled {
+      padding-inline: 10%;
+    }
+  }
+  
+  
+  .form_input {
+    width: 100%;
+    height: 42px;
+    background: none;
+    border: none;
+    outline: 1px solid #666666;
+    border-radius: 2px;
+    padding: 0.50rem;
+    padding-left: 1rem;
+  
+  }
+  
+  .form_label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    width: fit-content;
+    padding-inline: 8px;
+    background-color: #ffffff;
+   
+  }
+  
+  .form_checkbox {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .form_btn {
+    padding-top: 30px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #FF0000;
+    color: white;
+    border: 0.5px solid #FF0000;
+    border-radius: 2px;
+    font-weight: 300;
+    margin-left: 125px;
+    
+  }
+
+  .form_send {
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: underline;
+    padding-bottom: 30px;
+    cursor: pointer;
+  }

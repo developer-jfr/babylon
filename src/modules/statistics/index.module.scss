@@ -1,0 +1,109 @@
+@import '../../styles/variables/mixins.scss';
+
+.static_container {
+    background-image: url('./../../assets/images/square.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    @include for-max-width-fullHd_1300 {
+        height: auto;
+    }
+}
+.static_wrapp {
+    padding-inline: 10%;
+    padding-block: 2%;
+    @include for-max-width-tabled {
+        padding-inline: 10%;
+    }
+}
+
+.static_crypto {
+    text-align: center;
+    font-size: 18px;
+    color: #8D8D8D;
+    padding-bottom: 30px;
+}
+
+
+.static_level_grid {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.static_level_item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.static_user_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 10px;
+    padding-top: 90px;
+    @include for-max-width-fullHd_1300 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include for-max-width-pretabled {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-max-width-mobile {
+        grid-template-columns: 1fr;
+    }
+}
+
+.chat_title {
+    margin-left: 50%;
+    padding-bottom: 10px;
+    color: #8D8D8D;
+}
+.cryptocurrency {
+    width: 320px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    overflow-y: scroll;
+   padding: 10px;
+   font-size: 14px;
+   color: #8D8D8D;
+}
+
+.crypto_wrapp {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.crypto_list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+
+//------------ Level -----------------
+
+.statistics_level_wrapp {
+    display: flex;
+}
+
+.statistics_level_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+    text-align: end;
+    color: #8D8D8D;
+
+}
+
+
+.statistics_level_text > span:nth-child(2) {
+    font-size: 30px;
+    font-weight: 700;
+}

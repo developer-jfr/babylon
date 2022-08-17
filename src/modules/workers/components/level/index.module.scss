@@ -1,0 +1,34 @@
+.workers_level_wrapp {
+    display: flex;
+}
+
+.workers_gate {
+    width: 42px;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+}
+
+.workers_level_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 25px;
+    text-align: end;
+    color: #8D8D8D;
+
+}
+
+
+.workers_level_text > span:nth-child(2) {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.worker_active {
+    background: #05FF00 !important;
+}
+
+.worker_active_text {
+    color: #05FF00 !important;
+}

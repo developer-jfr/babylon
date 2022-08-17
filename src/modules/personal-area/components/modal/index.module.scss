@@ -1,0 +1,102 @@
+@import '../../../../styles/variables/mixins.scss';
+
+
+.modal {
+    @include for-max-width-mobile {
+        padding-top: 90px;
+    }
+}
+
+.modal_card {
+    width: 940px;
+    border-radius: 10px;
+    @include for-max-width-pretabled {
+        width: auto;
+    }
+}
+
+.modal_body {
+    @include for-max-width-mobile {
+        background: none;
+    }
+}
+
+.modal_back {
+    backdrop-filter: blur(3px);
+    background: none;
+    @include for-max-width-mobile {
+        backdrop-filter: blur(0px);
+     }
+}
+
+.modal_body_wrapp {
+    display: flex;
+    justify-content: space-around;
+    @include for-max-width-pretabled {
+        flex-direction: column;
+    }
+}
+
+
+.modal_line {
+    width: 4px;
+    height: auto;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 350%);
+}
+
+
+.close_wrapp {
+    display: flex;
+    justify-content: end;
+    background-color: #fff;
+    padding: 10px;
+    @include for-max-width-mobile {
+       display: none;
+    }
+  }
+  
+  .close_wrapp img {
+    height: 18px;
+  }
+
+
+  
+.form {
+  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form_input {
+    width: 350px;
+    height: 43px;
+    background: none;
+    border: none;
+    outline: 1px solid black;
+    border-radius: 2px;
+    padding: 0.50rem;
+    padding-left: 1rem;
+  }
+
+  .form_label {
+    position: relative;
+    top: -55px;
+    left: 15px;
+    width: fit-content;
+    padding-inline: 8px;
+    background-color: #fff;
+    @include  for-max-width-mobile {
+      background-color:#f9f3e9 !important ;
+    }
+  }
+
+
+  .form_data_btn {
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-decoration: underline;
+  }

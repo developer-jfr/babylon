@@ -1,0 +1,80 @@
+@import './resolution';
+
+@mixin for-max-width-fullhd {
+  @media only screen and (max-width: $fullHd) {
+    @content;
+  }
+}
+
+@mixin for-max-width-fullHd_1300 {
+  @media only screen and (max-width: $fullHd_1300) {
+    @content;
+  }
+}
+
+@mixin for-max-width-desktop_1100 {
+  @media only screen and (max-width: $desktop_1100) {
+    @content;
+  }
+}
+
+@mixin for-max-width-desktop {
+  @media only screen and (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin for-max-width-pretabled {
+  @media only screen and (max-width: $preTabled) {
+    @content;
+  }
+}
+
+@mixin for-max-width-tabled {
+  @media only screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin for-max-width-mobile_700 {
+  @media only screen and (max-width: $mobile_700) {
+    @content;
+  }
+}
+
+
+@mixin for-max-width-pre-mobile {
+  @media only screen and (max-width: $pre_mobile) {
+    @content;
+  }
+}
+
+@mixin for-max-width-mobile {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin custom-scroll {
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    width: 3px;
+    border-radius: 15px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

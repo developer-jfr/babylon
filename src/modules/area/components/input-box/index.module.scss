@@ -1,0 +1,36 @@
+.input_wrapper {
+    display: flex;
+    width: 90%;
+    height: 40px;
+    border-radius: 25px;
+    background: rgba(239, 246, 252, 0.87);
+}
+
+.input_select_img {
+    padding-left: 15px;
+    width: 15px;
+    padding-right: 10px;
+}
+
+.input {
+    width: 70%;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.input_icons {
+    display: flex;
+    margin-right: -10px;
+    z-index: 2;
+    padding-left: 15px;
+    gap: 10px;
+}
+
+.input_small_icon {
+    width: 20px;
+}
+
+.input_send {
+    width: 50px;
+}

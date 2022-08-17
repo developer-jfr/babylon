@@ -1,0 +1,30 @@
+@import '../../styles/variables/mixins.scss';
+
+.workers_container {
+    background-image: url('../../assets/images/personal_area.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @include for-max-width-desktop {
+        height: auto;
+    }
+}
+
+.workers_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding-inline: 15%;
+    padding-top: 20px;
+    @include for-max-width-desktop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include for-max-width-tabled {
+        padding-inline: 20%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include for-max-width-mobile {
+        padding-inline: 5%;
+    }
+}
+

@@ -1,0 +1,103 @@
+@import '../../styles/variables/mixins.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: transparent;
+    max-height: 120px;
+    @include for-max-width-fullHd_1300 {
+        justify-content: space-around;
+    }
+    @include for-max-width-desktop_1100 {
+        justify-content: space-between;
+        padding-inline: 20px;
+        align-items: center;
+    }
+    @include for-max-width-tabled {
+        padding-top: 10px;
+    }
+}
+
+
+
+
+.flex {
+    display: flex;
+    gap: 45px;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 18px;
+    @include for-max-width-fullHd_1300 {
+        font-size: 16px;
+        gap: 25px;
+    }
+}
+
+.flex a {
+    color: #8D8D8D;
+}
+
+
+.flex li {
+    color: #8D8D8D;
+}
+
+.item {
+    position: relative;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(195, 164, 0, 0.657798) 15.29%, rgba(190, 159, 0, 0.677083) 30.5%, rgba(192, 162, 0, 0.667193) 30.51%, rgba(187, 157, 0, 0.6875) 35.46%, rgba(194, 163, 0, 0.661398) 50.88%, rgba(255, 214, 0, 0.4375) 66.89%, rgba(74, 62, 0, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: 5s ease-in-out;
+}
+
+.item:after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 350%);
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    transition: 5s ease-in-out;
+}
+
+
+.logo {
+    width: 150px;
+    height: 100px;
+    margin-left: 30px;
+    @include for-max-width-tabled {
+        height: 50px;
+        margin-left: 0;
+    }
+}
+
+.items {
+    padding-block: 50px;
+    padding-right: 50px;
+
+    @include for-max-width-desktop_1100 {
+        display: none;
+    }
+}
+
+.navbar_user_wrapp {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar_user_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar_line {
+    width: 65%;
+    height: 1px;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 100%);
+    margin-block: 15px;
+}

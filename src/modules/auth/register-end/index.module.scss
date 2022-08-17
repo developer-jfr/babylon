@@ -1,0 +1,121 @@
+@import './../.././../styles/variables/mixins.scss';
+
+.wrapper {
+  background-image: url('./../../../assets/images/auth-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.container {
+  background-image: url('./../../../assets/images/auth-wall.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 100vh;
+  color: #666666;
+  @include for-max-width-tabled {
+    background-size: cover;
+    padding-top: 20%;
+  }
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  gap: 30px;
+text-align: center;
+@include for-max-width-tabled {
+  padding-top: 0;
+}
+@include for-max-width-mobile_700 {
+  padding-top: 7%;
+}
+@include for-max-width-mobile {
+  padding-top: 15%;
+}
+
+}
+
+
+.text {
+  margin-top: -15px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.content_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content_check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content_check_wrapp {
+  display: flex;
+    gap: 30px;
+    @include for-max-width-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+.form_img {
+  max-width: 150px;
+  max-height: 100px;
+}
+
+
+.form_checkbox {
+  transform: scale(2);
+  margin-right: 30px;
+  
+}
+
+.form_btn {
+  padding-top: 30px;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #FF0000;
+  color: white;
+  border: 0.5px solid #FF0000;
+  border-radius: 2px;
+  font-weight: 300;
+  margin-left: 125px;
+  @include for-max-width-mobile {
+    margin-left: 0px;
+    padding-inline: 15px;
+  }
+}
+
+.form_phone {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+}
+
+.form_btn_group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  @include for-max-width-mobile {
+    align-items: center;
+  }
+}
+
+.submit_btn {
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: underline;
+}

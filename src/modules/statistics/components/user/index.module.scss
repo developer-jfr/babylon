@@ -1,0 +1,17 @@
+.user_wrapp {
+    display: flex;
+    gap: 20px;
+}
+
+.user_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    color: #8D8D8D;
+}
+
+.user_img {
+    width: 80px;
+    height: 80px;
+}

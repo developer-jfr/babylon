@@ -1,0 +1,69 @@
+@import '../../../../styles/variables/mixins.scss';
+
+.item_wrapp {
+    display: flex;
+    width: 28%;
+    @include for-max-width-fullhd {
+        width: 35%;
+    }
+    @include for-max-width-desktop {
+        width: 45%;
+    }
+    @include for-max-width-tabled {
+        width: 100%;
+    }
+}
+
+.prize_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prize_content img {
+    @include for-max-width-mobile {
+        max-width: 70%;
+    }
+}
+
+.prize_img {
+    position: absolute;
+    top: 160px;
+    left: 45px;
+}
+
+.content_wrapp {
+    display: flex;
+    flex-direction: column;
+    color:   #8D8D8D;
+}
+
+.content_wrapp span:first-child {
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    line-height: 25px;
+    @include for-max-width-mobile {
+        font-size: 25px;
+    }
+}
+
+.content_wrapp span:nth-child(2) {
+    font-size: 24px ;
+    @include for-max-width-mobile {
+        font-size: 20px;
+    }
+}
+
+.content_wrapp span:last-child {
+    font-size: 11px;
+}
+
+.prize_btn {
+    background: #FF0000;
+    border: 0.5px solid #FF0000;
+    border-radius: 2px;
+    padding: 10px 25px;
+    color: #fff;
+    margin-right: -180px;
+}

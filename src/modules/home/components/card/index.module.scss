@@ -1,0 +1,18 @@
+@import 'styles/variables/mixins.scss';
+
+.card_wrapp {
+    margin-top: -60px;
+    transition: .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.card_wrapp:hover {
+    transform: scale(1.05);
+}
+
+.card_wrapp img {
+    @include for-max-width-tabled {
+        width: 50%;
+    }
+}

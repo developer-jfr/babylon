@@ -1,0 +1,74 @@
+@import '../../styles/variables/mixins.scss';
+
+.prizes_container {
+    background-image: url('./../../assets/images/personal_area.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    @include for-max-width-fullHd_1300 {
+
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.content_img {
+    display: flex;
+    justify-content: center;
+}
+
+.content_img img {
+    @include for-max-width-mobile {
+       max-width: 65%;
+    }
+}
+
+.content_wrapp {
+    padding-top: 3%;
+}
+
+.content_text {
+    width: 40%;
+}
+
+.content_text h2 {
+    font-size: 18px;
+}
+
+.content_text p {
+    font-size: 12px;
+}
+
+.content_text span {
+    font-size: 64px;
+}
+
+.content_items {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.item_wrapp {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    @include for-max-width-desktop {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+}
+
+
+
+.line {
+    width: 3px;
+    height: 260px;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 350%);
+    @include for-max-width-desktop {
+        display: none;
+    }
+}
+
+

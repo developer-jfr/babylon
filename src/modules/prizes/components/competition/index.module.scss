@@ -1,0 +1,99 @@
+@import '../../../../styles/variables/mixins.scss';
+
+.competition_items {
+   display: flex;
+   justify-content: center;
+   gap: 10%;
+}
+
+.winners_img {
+    display: flex;
+    justify-content: center;
+    padding-block: 3rem;
+    margin-block: 3rem;
+    @include for-max-width-mobile {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.winners_img img {
+    @include for-max-width-mobile {
+        max-width: 65%;
+    }
+}
+
+
+.winners_wrapp {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    @include for-max-width-fullHd_1300  {
+        gap: 25px;
+    }
+    @include for-max-width-desktop {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+}
+
+.winner_item {
+    display: flex;
+    align-items: center;
+    @include for-max-width-mobile {
+        flex-direction: column
+    }
+}
+.prize_img {
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.prize_img img {
+    @include for-max-width-mobile {
+        max-width: 65%;
+        padding-bottom: 30px;
+    }
+}
+
+.prize_element {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.prize_time {
+    position: relative;
+    top: -170px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.prize_time span:first-child {
+    font-size: 44px;
+}
+
+.prize_time span:last-child {
+    font-size: 20px;
+}
+
+
+.line {
+    width: 3px;
+    height: 180px;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 350%);
+    margin-top: 20px;
+}
+
+.sc_line {
+    
+    @include for-max-width-desktop {
+        display: none;
+    }
+}

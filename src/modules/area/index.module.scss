@@ -1,0 +1,149 @@
+@import '../../styles/variables/mixins.scss';
+
+.square {
+    background-image: url('./../../assets/images/square.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.person_wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-top: 20px;
+    padding-inline: 80px;
+
+    @include for-max-width-tabled {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-inline: 10%;
+    }
+}
+
+.person_group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+
+    @include for-max-width-tabled {
+        gap: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.person_labels {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 55px;
+    padding-bottom: 20px;
+    @include for-max-width-tabled {
+        display: none;
+    }
+}
+
+.line {
+    height: 3px;
+    border-radius: 5px;
+    margin-inline: 125px;
+    background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 100%);
+    @include for-max-width-tabled {
+       display: none;
+    }
+}
+
+.chat_wrapper {
+    padding-inline: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding-bottom: 50px;
+    @include for-max-width-fullHd_1300 {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include for-max-width-pretabled {
+        gap: 50px;
+        grid-template-columns: 1fr;
+        padding-inline: 10%;
+        padding-top: 50px;
+    }
+}
+
+.chat {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.turn {
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.cryptocurrency {
+    background: #FFFFFF;
+    border-radius: 4px;
+    overflow-y: scroll;
+    padding: 20px;
+    font-size: 14px;
+    max-width: 397px;
+    max-height: 230px;
+    @include for-max-width-pretabled {
+        max-width: 100%;
+    }
+}
+
+
+.chat_title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: end;
+    color: #8D8D8D;
+    margin-right: 25px;
+}
+
+.user_wrapper {
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: end;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.turn_user {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    height: 200px;
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+
+.crypto_wrapp {
+    display: flex;
+    gap: 70px;
+    @include for-max-width-fullHd_1300 {
+        flex-direction: column;
+    }
+}
+
+
+.crypto_list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 15px;
+}

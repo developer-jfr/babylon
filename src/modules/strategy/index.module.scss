@@ -1,0 +1,37 @@
+@import '../../styles/variables/mixins.scss';
+
+.strategy_container {
+    background-image: url('./../../assets/images/square.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+}
+
+
+.strategy_content {
+    padding-inline: 30%;
+    /* padding-block-end: 20px; */
+    padding-top: 20px;
+    padding-bottom: 100px;
+    @include for-max-width-tabled {
+        padding-inline: 10%;
+    }
+}
+
+.strategy_content_wrapp {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.strategy_row {
+    display: flex;
+    /* align-items: baseline; */
+    gap: 20px;
+} 
+
+.strategy_text {
+    text-align: end;
+    text-decoration: underline;
+}

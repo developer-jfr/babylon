@@ -1,0 +1,18 @@
+@import '../../../../styles/variables/mixins.scss';
+
+.item_wrapp {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 12px;
+    @include for-max-width-desktop {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+}
+
+.item_logo {
+    @include for-max-width-mobile {
+        height: 40px;
+    }
+}

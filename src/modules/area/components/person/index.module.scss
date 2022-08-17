@@ -1,0 +1,12 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.person {
+    width: 80px;
+    height: 80px;
+}

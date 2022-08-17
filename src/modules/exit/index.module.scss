@@ -1,0 +1,48 @@
+@import './../../styles/variables/mixins.scss';
+
+.container {
+  background-image: url('../../assets/images/modal.svg');
+  background-repeat: no-repeat;
+    background-size: contain;
+    height: 60vh;
+    background-position: center;
+}
+
+.close_wrapp {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  margin-left: 300px;
+  @include for-max-width-fullhd {
+    margin-left: 260px;
+
+  }
+  @include for-max-width-mobile {
+    margin-left: 240px;
+    margin-top: 6.5%;
+
+  }
+}
+
+.close_wrapp img {
+  height: 18px;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+  transition: 5s ease-in-out;
+}
+
+.item:hover::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, #EEC800 -1.1%, rgba(74, 62, 0, 0.4) 350%);
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+  z-index: 999;
+  transition: 5s ease-in-out;
+}
+

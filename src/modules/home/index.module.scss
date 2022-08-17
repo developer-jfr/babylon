@@ -1,0 +1,34 @@
+@import '../../styles/variables/mixins.scss';
+
+.wrapper {
+    background-image: url('./../../assets/images/home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 50px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    @include for-max-width-tabled {
+        gap: 35px;
+    }
+}
+
+
+.level {
+   margin-top: -60px;
+   transition: .3s ease-in-out;
+   @include for-max-width-tabled {
+    width: 50%;
+    margin-top: -55px;
+}
+}
+
+.level:hover {
+    transform: scale(1.05);
+}
+
