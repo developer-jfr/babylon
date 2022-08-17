@@ -20,13 +20,12 @@ const NavBar = () => {
   const {data} = useGetUserDetails();
   const navigate = useNavigate();
   
-  let isLoginedLC = localStorage.getItem('isLogined');
 
 useEffect( () => {
-  if(isLoginedLC !== 'true') {
+  if(!isLogined) {
     return navigate('/auth/sign-in', {state: true})
   }
-}, [isLoginedLC])
+}, [isLogined])
 
   const isExit = () => {
     setExit(!exit);

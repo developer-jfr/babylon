@@ -563,7 +563,7 @@ const PersonalArea = () => {
 )}
              
               
-              <div className="has-text-right" onClick={() => setIsActive(true)}>
+              <div className={`has-text-right ${styles.scale_btn}`}onClick={() => setIsActive(true)}>
                 Добавить еще карту
               </div>
               <div>
@@ -595,7 +595,7 @@ const PersonalArea = () => {
                   dispatch(authSlice.actions.setIsLogined(false));
                   return navigate("/auth/sign-up");
                 }}
-                className={styles.personal_form_btn}
+                className={`${styles.personal_form_btn} ${styles.shake_btn}`}
               >
                 Удалить мой аккаунт
               </button>

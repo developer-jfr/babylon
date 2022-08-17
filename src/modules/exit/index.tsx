@@ -37,7 +37,7 @@ const Exit: FC<IProps> = ({ functionToggle, toggle }) => {
               <p onClick={() => exit()} className={styles.item}>
               Да
               </p>
-              <p onClick={() => functionToggle(false)} className={styles.item}>
+              <p onClick={() => functionToggle(false)} className={`${styles.item} ${styles.shake_btn}`}>
               Нет
               </p>
             </div>

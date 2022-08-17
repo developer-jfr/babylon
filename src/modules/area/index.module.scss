@@ -104,6 +104,12 @@
     text-align: end;
     color: #8D8D8D;
     margin-right: 25px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.chat_title:hover {
+    transform: scale(1.05);
 }
 
 .user_wrapper {
@@ -131,6 +137,18 @@
     overflow-y: scroll;
     padding-right: 20px;
 }
+
+.turn_user span {
+    display: block;
+   transition: all .3s ease-in-out;
+   cursor: pointer;
+}
+
+.turn_user span:hover {
+    transform: scale(1.05);
+    opacity: 0.8s;
+}
+
 
 .crypto_wrapp {
     display: flex;

@@ -110,6 +110,12 @@
     @include for-max-width-mobile {
       margin-left: 0px;
     }
+    transition: all .3s ease-in-out;
+  }
+
+
+  .form_btn:hover {
+     transform: scale(1.05);
   }
 
   .form_btn_group {
@@ -117,4 +123,16 @@
     flex-direction: column;
     gap: 10px;
     align-items: flex-end;
+  }
+
+
+  // -------------------- Animation -----------------------------
+  .btn_animation {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  .btn_animation:hover {
+    transform: scale(1.05);
   }

@@ -85,10 +85,10 @@ const SignIn = () => {
                 </div>
               </div>
             <div className={styles.form_btn_group}>
-            <div onClick={() => setIsChangePassword(true)} style={{fontSize: '14px', cursor: 'pointer'}}>Забыли пароль?</div>
+            <div onClick={() => setIsChangePassword(true)} className={styles.btn_animation} style={{fontSize: '14px', cursor: 'pointer'}}>Забыли пароль?</div>
             <button  type='submit' disabled={isSubmitting}  className={styles.form_btn}>Вход</button>
             <div onClick={() => setIsChangePassword(true)}  className={styles.form_btn}>Смена пароля</div>
-            <div className="has-text-right" onClick={() => navigate('/auth/sign-up')}>
+            <div className={`has-text-right ${styles.btn_animation}`}  onClick={() => navigate('/auth/sign-up')}>
                 Регистрация
             </div>
             </div>

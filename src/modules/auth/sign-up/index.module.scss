@@ -112,8 +112,24 @@
   font-weight: 300;
   margin-left: 125px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
   @include for-max-width-mobile {
     margin-left: 0;
   }
 }
 
+.form_btn:hover {
+  transform: scale(1.05);
+}
+
+
+  // -------------------- Animation -----------------------------
+  .btn_animation {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  .btn_animation:hover {
+    transform: scale(1.05);
+  }

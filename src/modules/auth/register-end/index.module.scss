@@ -91,10 +91,17 @@ text-align: center;
   border-radius: 2px;
   font-weight: 300;
   margin-left: 125px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
   @include for-max-width-mobile {
     margin-left: 0px;
     padding-inline: 15px;
   }
+}
+
+
+.form_btn:hover {
+  transform: scale(1.05);
 }
 
 .form_phone {
@@ -118,4 +125,9 @@ text-align: center;
   border: none;
   outline: none;
   text-decoration: underline;
+  transition: .3s ease-in-out;
+}
+
+.submit_btn:hover {
+  transform: scale(1.05);
 }

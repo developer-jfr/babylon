@@ -36,8 +36,13 @@
 
 .flex a {
     color: #8D8D8D;
+    transition: all 0.3s ease-in-out;
 }
 
+
+.flex a:hover {
+    transform: scale(1.05);
+}
 
 .flex li {
     color: #8D8D8D;

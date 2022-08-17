@@ -137,7 +137,7 @@ const SignUp = () => {
                   }}
                   
                 />
-                <div className="has-text-right" onClick={() => navigate('/auth/sign-in/')}>
+                <div className={`has-text-right ${styles.btn_animation}`} onClick={() => navigate('/auth/sign-in/')}>
   Уже есть аккаунт
                 </div>
                 <div style={{ alignItems: "center" }}>

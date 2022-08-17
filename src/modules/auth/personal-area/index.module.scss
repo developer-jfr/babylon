@@ -5,10 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-    @include for-max-width-tabled {
-      height: 110vh;
-    }
 }
 
 .container {
@@ -16,12 +12,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    height: 100vh;
     color: #666666;
     @include for-max-width-tabled {
       background-size: cover;
       padding-top: 20%;
-      height: 110vh;
     }
 }
 
@@ -121,10 +115,17 @@
     font-weight: 300;
     text-align: center;
     margin-left: 125px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
     @include for-max-width-tabled  {
       margin-left: 0px;
       margin-inline: 20px;
     }
+  }
+
+
+  .form_btn:hover {
+    transform: scale(1.05);
   }
 
   .form_phone {
@@ -161,9 +162,14 @@
   background: none;
   border: none;
   outline: none;
+  transition: all .3s ease-in-out;
   @include for-max-width-mobile  {
     text-align: center;
     padding-block: 20px;
     padding-top: 10px;
   }
+}
+
+.form_save_btn:hover {
+  transform: scale(1.05);
 }
